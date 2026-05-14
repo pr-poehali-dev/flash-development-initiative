@@ -369,7 +369,8 @@ export default function Presentation() {
             <div className="slide-2-header-overlay">
               <div>
                 <p className="slide-2-title">Заказчик проекта</p>
-                <h2 className="company-name-big">Производитель балок-опалубок</h2>
+                <h2 className="company-name-big">ООО «Фирма ДАК-10»</h2>
+                <p style={{ margin: "6px 0 0", fontSize: 14, color: "rgba(255,255,255,0.5)", fontWeight: 400 }}>Производитель балок-опалубок</p>
               </div>
             </div>
           </div>
