@@ -342,7 +342,7 @@ export default function Presentation() {
             <div>
               <div className="badge">
                 <span>✦</span>
-                Антикризисный проект · 2025
+                Начинающий предприниматель · 15.05.2026
               </div>
               <h1 className="slide-title">
                 Команда,<br />которая<br /><span className="accent">решает задачи</span>
