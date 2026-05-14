@@ -7,6 +7,7 @@ const FORMWORK_IMG = "https://cdn.poehali.dev/projects/bc2ea024-cd6a-476d-8f99-5
 const slides = [
   { id: 1 },
   { id: 2 },
+  { id: 3 },
 ]
 
 export default function Presentation() {
@@ -406,6 +407,66 @@ export default function Presentation() {
               <p className="potential-text">
                 <strong>Потенциал компании высок:</strong> 23 года безупречной работы, нет в реестре недобросовестных поставщиков, нет дисквалифицированных руководителей. Кризис вызван падением заказов — это решаемо. Наш план: тендеры, выход на казахстанский рынок и оптимизация расходов.
               </p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {current === 2 && (
+        <div className="slide" style={{ background: "linear-gradient(135deg, #0d1b2a 0%, #1a0a0a 100%)", flexDirection: "column", maxWidth: 1100 }}>
+          <div style={{ padding: "50px 60px 20px", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
+            <div className="badge" style={{ background: "rgba(239,68,68,0.12)", borderColor: "rgba(239,68,68,0.3)", color: "#fca5a5" }}>
+              <span>⚠</span>
+              Текущая ситуация и проблема
+            </div>
+            <h2 style={{ margin: "12px 0 0", fontSize: "clamp(28px,3.5vw,42px)", fontWeight: 800, color: "#fff", lineHeight: 1.1 }}>
+              Компания в <span style={{ background: "linear-gradient(135deg,#ef4444,#f97316)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>глубоком минусе</span>
+            </h2>
+          </div>
+          <div style={{ flex: 1, padding: "30px 60px 50px", display: "flex", gap: 30, alignItems: "stretch" }}>
+            <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 20 }}>
+              <div style={{ background: "rgba(239,68,68,0.06)", border: "1px solid rgba(239,68,68,0.2)", borderRadius: 20, padding: "24px 28px", display: "flex", alignItems: "center", gap: 20 }}>
+                <div style={{ flexShrink: 0 }}>
+                  <div style={{ fontSize: 11, fontWeight: 700, color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: 1, marginBottom: 6 }}>Выручка</div>
+                  <div style={{ fontSize: "clamp(32px,4vw,52px)", fontWeight: 800, color: "#f87171", lineHeight: 1 }}>5,1 млн ₽</div>
+                  <div style={{ marginTop: 8, display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(239,68,68,0.15)", borderRadius: 100, padding: "4px 12px" }}>
+                    <span style={{ fontSize: 13, color: "#f87171", fontWeight: 700 }}>▼ −86%</span>
+                  </div>
+                </div>
+                <img src="https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotzqeMEI3U4n5WR4viOTTLTfav6C26yL8YcmNB7nRyBus" alt="График выручки" style={{ flex: 1, height: 90, objectFit: "contain", opacity: 0.9 }} />
+              </div>
+              <div style={{ background: "rgba(239,68,68,0.06)", border: "1px solid rgba(239,68,68,0.25)", borderRadius: 20, padding: "24px 28px", display: "flex", alignItems: "center", gap: 20 }}>
+                <div style={{ flexShrink: 0 }}>
+                  <div style={{ fontSize: 11, fontWeight: 700, color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: 1, marginBottom: 6 }}>Чистая прибыль</div>
+                  <div style={{ fontSize: "clamp(32px,4vw,52px)", fontWeight: 800, color: "#f87171", lineHeight: 1 }}>−7,2 млн ₽</div>
+                  <div style={{ marginTop: 8, display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(239,68,68,0.15)", borderRadius: 100, padding: "4px 12px" }}>
+                    <span style={{ fontSize: 13, color: "#f87171", fontWeight: 700 }}>▼ −173%</span>
+                  </div>
+                </div>
+                <img src="https://i.oneme.ru/i?r=BTE2sh_eZW7g8kugOdIm2NotizcM1tHPP8-fpE4lr5dsr_av6C26yL8YcmNB7nRyBus" alt="График прибыли" style={{ flex: 1, height: 90, objectFit: "contain", opacity: 0.9 }} />
+              </div>
+            </div>
+            <div style={{ width: 280, display: "flex", flexDirection: "column", gap: 16, flexShrink: 0 }}>
+              <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 16, padding: "20px", flex: 1 }}>
+                <div style={{ fontSize: 11, fontWeight: 700, color: "rgba(255,255,255,0.35)", textTransform: "uppercase", letterSpacing: 1, marginBottom: 12 }}>Ключевые проблемы</div>
+                {[
+                  { icon: "📦", text: "Заказов почти нет" },
+                  { icon: "💸", text: "Расходы превышают выручку" },
+                  { icon: "📉", text: "Потеря 86% выручки за год" },
+                  { icon: "🚫", text: "Нет новых каналов продаж" },
+                ].map((item, i) => (
+                  <div key={i} style={{ display: "flex", alignItems: "center", gap: 10, padding: "10px 0", borderBottom: i < 3 ? "1px solid rgba(255,255,255,0.05)" : "none" }}>
+                    <span style={{ fontSize: 18 }}>{item.icon}</span>
+                    <span style={{ fontSize: 13, color: "rgba(255,255,255,0.65)", lineHeight: 1.4 }}>{item.text}</span>
+                  </div>
+                ))}
+              </div>
+              <div style={{ background: "linear-gradient(135deg, rgba(99,102,241,0.1), rgba(168,85,247,0.1))", border: "1px solid rgba(99,102,241,0.2)", borderRadius: 16, padding: "18px 20px" }}>
+                <div style={{ fontSize: 11, fontWeight: 700, color: "#a5b4fc", textTransform: "uppercase", letterSpacing: 1, marginBottom: 8 }}>Вывод</div>
+                <p style={{ fontSize: 13, color: "rgba(255,255,255,0.6)", lineHeight: 1.6, margin: 0 }}>
+                  Кризис решаем — репутация и опыт 23 лет позволяют выйти в плюс при правильной стратегии
+                </p>
+              </div>
             </div>
           </div>
         </div>
