@@ -489,19 +489,9 @@ export default function Presentation() {
           </div>
 
           <div style={{ flex: 1, padding: "28px 60px 44px", display: "flex", flexDirection: "column", gap: 20 }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-              <span style={{ fontSize: 15, color: "rgba(255,255,255,0.55)" }}>Выход на рынок</span>
-              <div style={{ display: "flex", alignItems: "center", gap: 8, background: "rgba(34,197,94,0.08)", border: "1px solid rgba(34,197,94,0.2)", borderRadius: 100, padding: "5px 14px" }}>
-                <img src="https://flagcdn.com/w40/kz.png" alt="Казахстан" style={{ width: 22, height: 15, objectFit: "cover", borderRadius: 3 }} />
-                <span style={{ fontSize: 14, fontWeight: 600, color: "#fff" }}>Казахстана</span>
-              </div>
-              <span style={{ fontSize: 15, color: "rgba(255,255,255,0.4)" }}>или</span>
-              <div style={{ display: "flex", alignItems: "center", gap: 8, background: "rgba(34,197,94,0.08)", border: "1px solid rgba(34,197,94,0.2)", borderRadius: 100, padding: "5px 14px" }}>
-                <img src="https://flagcdn.com/w40/tr.png" alt="Турция" style={{ width: 22, height: 15, objectFit: "cover", borderRadius: 3 }} />
-                <span style={{ fontSize: 14, fontWeight: 600, color: "#fff" }}>Турции</span>
-              </div>
-              <span style={{ fontSize: 15, color: "rgba(255,255,255,0.55)" }}>по двум направлениям:</span>
-            </div>
+            <p style={{ margin: 0, fontSize: 15, color: "rgba(255,255,255,0.55)", lineHeight: 1.6 }}>
+              Выход на рынок <strong style={{ color: "#fff" }}>Республики Казахстан</strong> или <strong style={{ color: "#fff" }}>Турции</strong> по двум направлениям:
+            </p>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
               {/* Карточка А */}
