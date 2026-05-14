@@ -433,7 +433,7 @@ export default function Presentation() {
                     <span style={{ fontSize: 13, color: "#f87171", fontWeight: 700 }}>▼ −86%</span>
                   </div>
                 </div>
-                <img src="https://cdn.poehali.dev/projects/bc2ea024-cd6a-476d-8f99-5103c4963f2e/files/7ec4c9c2-e4d9-4ddf-9de0-dd3d0e81325b.jpg" alt="График выручки" style={{ flex: 1, height: 100, objectFit: "cover", borderRadius: 12, opacity: 0.95 }} />
+
               </div>
               <div style={{ background: "rgba(239,68,68,0.06)", border: "1px solid rgba(239,68,68,0.25)", borderRadius: 20, padding: "24px 28px", display: "flex", alignItems: "center", gap: 20 }}>
                 <div style={{ flexShrink: 0 }}>
@@ -443,7 +443,7 @@ export default function Presentation() {
                     <span style={{ fontSize: 13, color: "#f87171", fontWeight: 700 }}>▼ −173%</span>
                   </div>
                 </div>
-                <img src="https://cdn.poehali.dev/projects/bc2ea024-cd6a-476d-8f99-5103c4963f2e/files/2fcf5215-c537-41f6-8819-124e7c222244.jpg" alt="График прибыли" style={{ flex: 1, height: 100, objectFit: "cover", borderRadius: 12, opacity: 0.95 }} />
+
               </div>
             </div>
             <div style={{ width: 280, display: "flex", flexDirection: "column", gap: 16, flexShrink: 0 }}>
