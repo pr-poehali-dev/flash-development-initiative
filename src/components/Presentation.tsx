@@ -351,6 +351,14 @@ export default function Presentation() {
                 Мы — старшеклассники социально-экономического профиля. Нас объединила реальная бизнес-проблема: производитель строительных опалубок потерял 178% чистого дохода. Мы проанализировали ситуацию и разработали антикризисный план.
               </p>
             </div>
+            <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 32, padding: "16px 20px", background: "rgba(255,255,255,0.04)", borderRadius: 16, border: "1px solid rgba(255,255,255,0.08)" }}>
+              <img src="https://nf-sch4.edumsko.ru/uploads/1500/1444/generalimage/Forostovich-Reznik/.thumbs/0x0_374x380__size__logo.png?1749196806168" alt="Герб школы" style={{ width: 52, height: 52, objectFit: "contain", flexShrink: 0 }} />
+              <span style={{ fontSize: 12, color: "rgba(255,255,255,0.6)", lineHeight: 1.5, fontWeight: 500 }}>
+                Наро-Фоминская средняя общеобразовательная школа № 4<br />
+                с углубленным изучением отдельных предметов<br />
+                имени В.В. Завадского
+              </span>
+            </div>
           </div>
         </div>
       )}
