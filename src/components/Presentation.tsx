@@ -351,14 +351,13 @@ export default function Presentation() {
                 Мы — старшеклассники социально-экономического профиля. Нас объединила реальная бизнес-проблема: производитель строительных опалубок потерял 178% чистого дохода. Мы проанализировали ситуацию и разработали антикризисный план.
               </p>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 32, padding: "16px 20px", background: "rgba(255,255,255,0.04)", borderRadius: 16, border: "1px solid rgba(255,255,255,0.08)" }}>
-              <img src="https://nf-sch4.edumsko.ru/uploads/1500/1444/generalimage/Forostovich-Reznik/.thumbs/0x0_374x380__size__logo.png?1749196806168" alt="Герб школы" style={{ width: 52, height: 52, objectFit: "contain", flexShrink: 0 }} />
-              <span style={{ fontSize: 12, color: "rgba(255,255,255,0.6)", lineHeight: 1.5, fontWeight: 500 }}>
-                Наро-Фоминская средняя общеобразовательная школа № 4<br />
-                с углубленным изучением отдельных предметов<br />
-                имени В.В. Завадского
-              </span>
-            </div>
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 16, padding: "60px 50px 60px 20px", flexShrink: 0 }}>
+            <img src="https://nf-sch4.edumsko.ru/uploads/1500/1444/generalimage/Forostovich-Reznik/.thumbs/0x0_374x380__size__logo.png?1749196806168" alt="Герб школы" style={{ width: 160, height: 160, objectFit: "contain" }} />
+            <span style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", lineHeight: 1.6, fontWeight: 500, textAlign: "center", maxWidth: 180 }}>
+              Наро-Фоминская СОШ № 4<br />
+              им. В.В. Завадского
+            </span>
           </div>
         </div>
       )}
