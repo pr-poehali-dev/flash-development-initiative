@@ -39,32 +39,12 @@ export default function Presentation() {
 
         .slide-1-left {
           flex: 1;
-          padding: 60px 50px;
+          padding: 60px 60px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           position: relative;
           z-index: 2;
-        }
-
-        .slide-1-right {
-          width: 420px;
-          position: relative;
-          flex-shrink: 0;
-        }
-
-        .slide-1-right img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          opacity: 0.85;
-        }
-
-        .slide-1-right::after {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(to right, #0d1b2a 0%, transparent 40%);
         }
 
         .badge {
@@ -371,25 +351,6 @@ export default function Presentation() {
                 Мы — старшеклассники социально-экономического профиля. Нас объединила реальная бизнес-проблема: производитель строительных опалубок потерял 178% чистого дохода. Мы проанализировали ситуацию и разработали антикризисный план.
               </p>
             </div>
-            <div className="team-members">
-              <div style={{ fontSize: 11, fontWeight: 600, color: "rgba(255,255,255,0.35)", textTransform: "uppercase", letterSpacing: "1px", marginBottom: 4 }}>Участники проекта</div>
-              {[
-                { initials: "АН", name: "Аналитик", role: "Финансовый анализ" },
-                { initials: "СТ", name: "Стратег", role: "Рыночная стратегия" },
-                { initials: "МА", name: "Маркетолог", role: "Поиск клиентов" },
-              ].map((m) => (
-                <div className="member-row" key={m.initials}>
-                  <div className="member-avatar">{m.initials}</div>
-                  <div className="member-info">
-                    <span className="member-name">{m.name}</span>
-                    <span className="member-role">{m.role}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="slide-1-right">
-            <img src={TEAM_IMG} alt="Команда" />
           </div>
         </div>
       )}
