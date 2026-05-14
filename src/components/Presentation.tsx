@@ -8,6 +8,7 @@ const slides = [
   { id: 1 },
   { id: 2 },
   { id: 3 },
+  { id: 4 },
 ]
 
 export default function Presentation() {
@@ -466,6 +467,83 @@ export default function Presentation() {
                 <p style={{ fontSize: 13, color: "rgba(255,255,255,0.6)", lineHeight: 1.6, margin: 0 }}>
                   Кризис решаем — репутация и опыт 23 лет позволяют выйти в плюс при правильной стратегии
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {current === 3 && (
+        <div className="slide" style={{ background: "linear-gradient(135deg, #0a1628 0%, #0d1f0d 100%)", flexDirection: "column", maxWidth: 1100 }}>
+          <div style={{ padding: "44px 60px 20px", borderBottom: "1px solid rgba(255,255,255,0.06)", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 20 }}>
+            <div>
+              <div className="badge" style={{ background: "rgba(34,197,94,0.1)", borderColor: "rgba(34,197,94,0.3)", color: "#86efac" }}>
+                <span>🌍</span>
+                Стратегия роста
+              </div>
+              <h2 style={{ margin: "10px 0 0", fontSize: "clamp(26px,3vw,40px)", fontWeight: 800, color: "#fff", lineHeight: 1.1 }}>
+                Концепция <span style={{ background: "linear-gradient(135deg,#22c55e,#16a34a)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>проекта</span>
+              </h2>
+            </div>
+            <img src="https://cdn.poehali.dev/projects/bc2ea024-cd6a-476d-8f99-5103c4963f2e/bucket/7e4431bf-c840-4125-8092-6066bf91a167.png" alt="Концепция" style={{ height: 60, objectFit: "contain", opacity: 0.9 }} />
+          </div>
+
+          <div style={{ flex: 1, padding: "28px 60px 44px", display: "flex", flexDirection: "column", gap: 20 }}>
+            <p style={{ margin: 0, fontSize: 15, color: "rgba(255,255,255,0.55)", lineHeight: 1.6 }}>
+              Выход на рынок <strong style={{ color: "#fff" }}>Республики Казахстан</strong> или <strong style={{ color: "#fff" }}>Турции</strong> по двум направлениям:
+            </p>
+
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
+              {/* Карточка А */}
+              <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(34,197,94,0.15)", borderRadius: 20, padding: "28px 30px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
+                  <div style={{ width: 40, height: 40, borderRadius: 12, background: "linear-gradient(135deg,#22c55e,#16a34a)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0 }}>🤝</div>
+                  <div>
+                    <div style={{ fontSize: 11, fontWeight: 700, color: "#86efac", textTransform: "uppercase", letterSpacing: 1 }}>Направление А</div>
+                    <div style={{ fontSize: 16, fontWeight: 700, color: "#fff" }}>Дистрибуция через партнёра</div>
+                  </div>
+                </div>
+                <p style={{ margin: "0 0 16px", fontSize: 14, color: "rgba(255,255,255,0.6)", lineHeight: 1.7 }}>
+                  Сбыт через местного агента, который берёт на себя таможенные вопросы и сертификацию продукции.
+                </p>
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                  <div style={{ background: "rgba(34,197,94,0.08)", borderRadius: 12, padding: "12px 16px", display: "flex", alignItems: "center", gap: 10 }}>
+                    <span style={{ fontSize: 16 }}>🇰🇿</span>
+                    <div>
+                      <div style={{ fontSize: 12, fontWeight: 600, color: "#fff" }}>Казахстан</div>
+                      <div style={{ fontSize: 12, color: "rgba(255,255,255,0.45)" }}>Tekato.kz</div>
+                    </div>
+                  </div>
+                  <div style={{ background: "rgba(34,197,94,0.08)", borderRadius: 12, padding: "12px 16px", display: "flex", alignItems: "center", gap: 10 }}>
+                    <span style={{ fontSize: 16 }}>🇹🇷</span>
+                    <div>
+                      <div style={{ fontSize: 12, fontWeight: 600, color: "#fff" }}>Турция</div>
+                      <div style={{ fontSize: 12, color: "rgba(255,255,255,0.45)" }}>ТИМ-ЭКСПО</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Карточка Б */}
+              <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(99,102,241,0.2)", borderRadius: 20, padding: "28px 30px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
+                  <div style={{ width: 40, height: 40, borderRadius: 12, background: "linear-gradient(135deg,#6366f1,#a855f7)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0 }}>🏛️</div>
+                  <div>
+                    <div style={{ fontSize: 11, fontWeight: 700, color: "#a5b4fc", textTransform: "uppercase", letterSpacing: 1 }}>Направление Б</div>
+                    <div style={{ fontSize: 16, fontWeight: 700, color: "#fff" }}>Государственные тендеры</div>
+                  </div>
+                </div>
+                <p style={{ margin: "0 0 16px", fontSize: 14, color: "rgba(255,255,255,0.6)", lineHeight: 1.7 }}>
+                  Государство постоянно финансирует стройки — дороги, жилые зоны, здания, новые районы городов.
+                </p>
+                <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                  {["Жилищное строительство", "Дорожная инфраструктура", "Новые городские районы"].map((item, i) => (
+                    <div key={i} style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                      <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#6366f1", flexShrink: 0 }} />
+                      <span style={{ fontSize: 13, color: "rgba(255,255,255,0.6)" }}>{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
