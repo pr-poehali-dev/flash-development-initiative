@@ -10,6 +10,7 @@ const slides = [
   { id: 3 },
   { id: 4 },
   { id: 5 },
+  { id: 6 },
 ]
 
 export default function Presentation() {
@@ -603,6 +604,67 @@ export default function Presentation() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      )}
+
+      {current === 5 && (
+        <div className="slide" style={{ background: "linear-gradient(135deg, #130a0a 0%, #1a0d0a 100%)", flexDirection: "column", maxWidth: 1100, minHeight: 600 }}>
+          <div style={{ padding: "44px 60px 20px", borderBottom: "1px solid rgba(255,255,255,0.06)", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+            <div>
+              <div className="badge" style={{ background: "rgba(239,68,68,0.1)", borderColor: "rgba(239,68,68,0.3)", color: "#fca5a5" }}>
+                <span>⚡</span>
+                Анализ рисков
+              </div>
+              <h2 style={{ margin: "10px 0 0", fontSize: "clamp(26px,3vw,42px)", fontWeight: 800, color: "#fff", lineHeight: 1.1 }}>
+                Риски и <span style={{ background: "linear-gradient(135deg,#ef4444,#f97316)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>допущения</span>
+              </h2>
+            </div>
+            <img src="https://cdn.poehali.dev/projects/bc2ea024-cd6a-476d-8f99-5103c4963f2e/bucket/ad390079-62fb-4f7e-a923-16f888a542aa.png" alt="Риски" style={{ height: 56, objectFit: "contain", opacity: 0.85 }} />
+          </div>
+
+          <div style={{ flex: 1, padding: "30px 60px 50px", display: "flex", flexDirection: "column", gap: 16 }}>
+            {[
+              {
+                num: "01",
+                icon: "🚢",
+                title: "Логистические сложности",
+                text: "Проблемы с доставкой и таможенным оформлением могут задержать поставки и увеличить издержки.",
+                color: "#ef4444",
+                mitigation: "Работа через местного партнёра со знанием таможни",
+              },
+              {
+                num: "02",
+                icon: "📣",
+                title: "Неправильное позиционирование",
+                text: "Слабое продвижение или недооценка особенностей рынка — клиенты могут не узнать о продукте или не понять его ценность.",
+                color: "#f97316",
+                mitigation: "Привлечение локального дистрибьютора с готовой базой",
+              },
+              {
+                num: "03",
+                icon: "💰",
+                title: "Высокие затраты на вход",
+                text: "Новый рынок требует вложений в маркетинг, логистику, адаптацию продукта и обучение персонала.",
+                color: "#eab308",
+                mitigation: "Партнёрская модель без капзатрат на инфраструктуру",
+              },
+            ].map((risk, i) => (
+              <div key={i} style={{ display: "flex", gap: 20, background: "rgba(255,255,255,0.02)", border: `1px solid ${risk.color}25`, borderLeft: `3px solid ${risk.color}`, borderRadius: 16, padding: "20px 24px", alignItems: "flex-start" }}>
+                <div style={{ width: 44, height: 44, borderRadius: 12, background: `${risk.color}15`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, flexShrink: 0 }}>{risk.icon}</div>
+                <div style={{ flex: 1 }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
+                    <span style={{ fontSize: 11, fontWeight: 700, color: risk.color, letterSpacing: 1 }}>{risk.num}</span>
+                    <span style={{ fontSize: 15, fontWeight: 700, color: "#fff" }}>{risk.title}</span>
+                  </div>
+                  <p style={{ margin: "0 0 10px", fontSize: 13, color: "rgba(255,255,255,0.55)", lineHeight: 1.6 }}>{risk.text}</p>
+                  <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(34,197,94,0.08)", border: "1px solid rgba(34,197,94,0.2)", borderRadius: 100, padding: "4px 12px" }}>
+                    <span style={{ fontSize: 11, color: "#86efac" }}>✓</span>
+                    <span style={{ fontSize: 12, color: "#86efac", fontWeight: 500 }}>{risk.mitigation}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       )}
