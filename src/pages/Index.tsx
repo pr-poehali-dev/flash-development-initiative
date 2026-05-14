@@ -1,7 +1,13 @@
-import Presentation from "../components/Presentation"
+import PhotographyBanner from "../components/PhotographyBanner"
+import Footer from "../components/Footer"
 
 const Index = () => {
-  return <Presentation />
+  return (
+    <>
+      <PhotographyBanner />
+      <Footer />
+    </>
+  )
 }
 
 export default Index
