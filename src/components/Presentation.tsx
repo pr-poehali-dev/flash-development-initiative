@@ -9,6 +9,7 @@ const slides = [
   { id: 2 },
   { id: 3 },
   { id: 4 },
+  { id: 5 },
 ]
 
 export default function Presentation() {
@@ -545,6 +546,62 @@ export default function Presentation() {
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {current === 4 && (
+        <div className="slide" style={{ background: "linear-gradient(135deg, #07101a 0%, #0a1a10 60%, #07101a 100%)", flexDirection: "column", maxWidth: 1100, minHeight: 600 }}>
+          <div style={{ padding: "50px 60px 24px", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
+            <div className="badge" style={{ background: "rgba(250,204,21,0.1)", borderColor: "rgba(250,204,21,0.3)", color: "#fde68a" }}>
+              <span>🎯</span>
+              Цель проекта
+            </div>
+            <h2 style={{ margin: "12px 0 0", fontSize: "clamp(28px,3.5vw,46px)", fontWeight: 800, color: "#fff", lineHeight: 1.1 }}>
+              Выручка до <span style={{ background: "linear-gradient(135deg,#facc15,#f59e0b)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>30 млн ₽</span>
+            </h2>
+            <p style={{ margin: "10px 0 0", fontSize: 14, color: "rgba(255,255,255,0.4)", fontWeight: 400 }}>2026 – 2028 год</p>
+          </div>
+
+          <div style={{ flex: 1, padding: "30px 60px 50px", display: "flex", gap: 24 }}>
+            {/* Левая колонка — главный тезис */}
+            <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 20 }}>
+              <div style={{ background: "rgba(250,204,21,0.05)", border: "1px solid rgba(250,204,21,0.15)", borderRadius: 20, padding: "28px 30px", flex: 1 }}>
+                <p style={{ margin: 0, fontSize: 15, color: "rgba(255,255,255,0.7)", lineHeight: 1.9 }}>
+                  Сформировать устойчивый <strong style={{ color: "#fff" }}>экспортный канал поставок балок</strong> в Центральную Азию — через пилотный запуск в <strong style={{ color: "#fde68a" }}>Казахстане</strong> с последующим масштабированием в <strong style={{ color: "#fde68a" }}>Турцию</strong>.
+                </p>
+              </div>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
+                <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 16, padding: "18px 20px" }}>
+                  <div style={{ fontSize: 24, marginBottom: 6 }}>🚀</div>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: "#fff", marginBottom: 4 }}>Без капзатрат</div>
+                  <div style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", lineHeight: 1.5 }}>Никаких вложений в локальную инфраструктуру</div>
+                </div>
+                <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 16, padding: "18px 20px" }}>
+                  <div style={{ fontSize: 24, marginBottom: 6 }}>🤝</div>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: "#fff", marginBottom: 4 }}>Партнёрские продажи</div>
+                  <div style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", lineHeight: 1.5 }}>Модель через дистрибьюторов на месте</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Правая колонка — роадмап */}
+            <div style={{ width: 270, flexShrink: 0, display: "flex", flexDirection: "column", gap: 12 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: "rgba(255,255,255,0.35)", textTransform: "uppercase", letterSpacing: 1 }}>Дорожная карта</div>
+              {[
+                { year: "2026", color: "#facc15", text: "Пилотный запуск в Казахстане, первые поставки" },
+                { year: "2027", color: "#f59e0b", text: "Масштабирование, выход на стабильный объём" },
+                { year: "2028", color: "#22c55e", text: "Запуск турецкого направления, выручка 30 млн ₽" },
+              ].map((item, i) => (
+                <div key={i} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
+                  <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 0 }}>
+                    <div style={{ width: 36, height: 36, borderRadius: 10, background: `${item.color}20`, border: `1px solid ${item.color}50`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, fontWeight: 800, color: item.color, flexShrink: 0 }}>{item.year}</div>
+                    {i < 2 && <div style={{ width: 1, height: 20, background: "rgba(255,255,255,0.08)", margin: "4px 0" }} />}
+                  </div>
+                  <p style={{ margin: "8px 0 0", fontSize: 13, color: "rgba(255,255,255,0.6)", lineHeight: 1.5 }}>{item.text}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
